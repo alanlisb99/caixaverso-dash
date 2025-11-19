@@ -1,59 +1,95 @@
 # CaixaVerso
+# 📊 CaixaVerso Dashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
+Projeto desenvolvido como parte de um desafio técnico.  
+O objetivo é criar um dashboard funcional com autenticação, consumo de API fake, gráficos, simulador de investimentos e testes unitários com cobertura acima de 80%.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **Angular 19**
+- **TypeScript**
+- **Chart.js + ng2-charts**
+- **RxJS**
+- **JSON Server** (fake backend)
+- **Karma + Jasmine** (testes unitários)
+- **HTML / CSS**
+
+---
+
+## 📁 Estrutura do Projeto
+
+src/
+├── app/
+│ ├── auth/ # Login e autenticação
+│ ├── core/ # Guard + Interceptor
+│ ├── dashboard/ # Páginas e componentes do dashboard
+│ ├── models/ # Interfaces e tipagens
+│ └── services/ # Serviços (API, perfil, investimentos)
+└── fake-api/ # Backend fake (JSON Server)
 
 ## Development server
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+A API ficará disponível em:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+👉 http://localhost:3000/
 
-## Code scaffolding
+Endpoints importantes:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- `POST /autenticacao/login`
+- `GET /investimentos`
+- `GET /perfil`
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🔐 Login Fake
 
-```bash
-ng generate --help
-```
+Use o login configurado na API:
 
-## Building
+email: teste@teste.com
 
-To build the project run:
+senha: 123456
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🧪 Como rodar os testes
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
 ng test
-```
+
+---
+
+## 📊 Gerar cobertura de testes
+
+
+O relatório ficará em:
+
+/coverage/index.html
+
+yaml
+Copy code
+
+O projeto mantém **+80% de cobertura** em:
+
+- Statements  
+- Branches  
+- Lines  
 
 ## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+## ✨ Funcionalidades Implementadas
 
-```bash
-ng e2e
-```
+- ✔ Autenticação com login fake (JSON Server + token)
+- ✔ AuthGuard com bloqueio e redirecionamento
+- ✔ Interceptor adicionando token nas requisições
+- ✔ Dashboard completo contendo:
+  - gráfico da evolução dos investimentos
+  - lista de produtos recomendados
+  - perfil de risco do usuário
+  - simulador de investimentos
+- ✔ Testes unitários para components, services e guards
+- ✔ Cobertura acima de 80%
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Alan Lisboa**  
+Projeto desenvolvido para avaliação técnica.
