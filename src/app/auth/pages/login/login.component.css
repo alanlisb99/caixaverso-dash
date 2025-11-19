@@ -1,0 +1,46 @@
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--caixa-blue) 0%,
+    var(--caixa-light-blue) 40%,
+    #ffffff 100%
+  );
+}
+
+.login-card {
+  width: 380px;
+  padding: 16px 24px 24px;
+}
+
+/* Título CAIXA */
+.login-card h1 {
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: var(--caixa-blue);
+}
+
+/* Campos ocupando toda a largura */
+.full-width {
+  width: 100%;
+}
+
+/* Espaço entre campos e botão */
+mat-form-field {
+  margin-bottom: 12px;
+}
+
+/* Botão principal */
+button[mat-raised-button] {
+  margin-top: 8px;
+}
+
+/* Mensagem de erro */
+.error {
+  color: #d32f2f;
+  margin-top: 8px;
+  font-size: 13px;
+}

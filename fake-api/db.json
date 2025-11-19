@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "teste@teste.com",
+      "senha": "123456",
+      "nome": "Cliente Caixa"
+    }
+  ],
+  "investments": [
+    {
+      "id": 1,
+      "product": "CDB Caixa 110% CDI",
+      "type": "CDB",
+      "balance": 15000,
+      "profitability": 0.115
+    },
+    {
+      "id": 2,
+      "product": "LCI Imobiliária",
+      "type": "LCI",
+      "balance": 8000,
+      "profitability": 0.10
+    },
+    {
+      "id": 3,
+      "product": "Tesouro Selic 2029",
+      "type": "Tesouro Direto",
+      "balance": 5000,
+      "profitability": 0.13
+    }
+  ],
+  "investmentHistory": [
+    { "id": 1, "month": "Jan", "total": 18000 },
+    { "id": 2, "month": "Fev", "total": 20000 },
+    { "id": 3, "month": "Mar", "total": 22000 },
+    { "id": 4, "month": "Abr", "total": 25000 },
+    { "id": 5, "month": "Mai", "total": 28000 }
+  ],
+  "riskProfiles": [
+    {
+      "id": 1,
+      "type": "Moderado",
+      "level": "Moderado",
+      "score": 65,
+      "description": "Você aceita algum risco em troca de maior potencial de retorno, mas ainda valoriza estabilidade."
+    }
+  ],
+  "riskHistory": [
+    { "id": 1, "month": "Jan", "score": 55 },
+    { "id": 2, "month": "Fev", "score": 60 },
+    { "id": 3, "month": "Mar", "score": 62 },
+    { "id": 4, "month": "Abr", "score": 64 },
+    { "id": 5, "month": "Mai", "score": 65 }
+  ],
+  "recommendedProducts": [
+    {
+      "id": 1,
+      "name": "CDB Caixa 110% CDI",
+      "type": "CDB",
+      "profitability": 0.115,
+      "riskLevel": "Moderado"
+    },
+    {
+      "id": 2,
+      "name": "LCI Imobiliária",
+      "type": "LCI",
+      "profitability": 0.10,
+      "riskLevel": "Conservador"
+    },
+    {
+      "id": 3,
+      "name": "Fundo Multimercado Caixa Alpha",
+      "type": "Fundo",
+      "profitability": 0.14,
+      "riskLevel": "Agressivo"
+    }
+  ]
+}
+

@@ -1,0 +1,40 @@
+:root {
+  --caixa-blue: #005ca9;
+  --caixa-light-blue: #00adef;
+  --caixa-orange: #f39200;
+  --caixa-bg: #f5f7fb;
+  --caixa-text: #222222;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: var(--caixa-bg);
+  color: var(--caixa-text);
+}
+
+
+.mat-toolbar.mat-primary {
+  background: var(--caixa-blue);
+  color: #ffffff;
+}
+
+
+.mat-toolbar .mat-icon {
+  margin-right: 4px;
+}
+
+
+.mat-nav-list a.active {
+  color: var(--caixa-blue);
+  font-weight: 600;
+  border-left: 3px solid var(--caixa-orange);
+}
+
+
+a {
+  text-decoration: none;
+}

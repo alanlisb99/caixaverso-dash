@@ -1,0 +1,25 @@
+# Angular
+.angular/
+dist/
+coverage/
+public/
+
+# Fake API
+fake-api/node_modules/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Others
+*.cache/
